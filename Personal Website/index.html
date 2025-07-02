@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lenin Medina - Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            background: #222;
+            color: #fff;
+            width: 270px;
+            min-width: 220px;
+            padding: 40px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 24px;
+            border: 3px solid #fff;
+        }
+        .sidebar h1 {
+            font-size: 2em;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+        .sidebar .role {
+            font-size: 1.1em;
+            color: #bbb;
+            margin-bottom: 24px;
+        }
+        .sidebar .contact, .sidebar .social {
+            width: 100%;
+            margin-bottom: 18px;
+        }
+        .sidebar .contact a, .sidebar .social a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 6px;
+            transition: color 0.2s;
+        }
+        .sidebar .social a:hover {
+            color: #1abc9c;
+        }
+        .main {
+            flex: 1;
+            padding: 48px 40px;
+            background: #fff;
+            box-shadow: -2px 0 8px #eee;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #1abc9c;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+            letter-spacing: 1px;
+        }
+        .experience, .education {
+            margin-bottom: 18px;
+        }
+        .job-title, .degree {
+            font-weight: bold;
+            color: #222;
+        }
+        .company, .school {
+            color: #888;
+            font-size: 1em;
+        }
+        .period {
+            float: right;
+            color: #bbb;
+            font-size: 0.95em;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background: #f1f1f1;
+            color: #222;
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 1em;
+            margin-bottom: 8px;
+        }
+        @media (max-width: 800px) {
+            .layout { flex-direction: column; }
+            .sidebar { width: 100%; min-width: 0; flex-direction: row; justify-content: flex-start; align-items: flex-start; padding: 24px; }
+            .sidebar img { margin-bottom: 0; margin-right: 24px; }
+            .main { padding: 32px 12px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <!-- ====== PROFILE PHOTO ====== -->
+            <!-- Replace src with your photo -->
+            <img src="profile.jpg" alt="Lenin Medina">
+            <!-- ====== NAME ====== -->
+            <h1>Lenin Medina</h1>
+            <div class="role">Student & Aspiring Engineer</div>
+            <!-- ====== CONTACT INFO ====== -->
+            <div class="contact">
+                <a href="mailto:leninmed45@gmail.com">leninmed45@gmail.com</a>
+                <a href="tel:+19292178448">(929) 217-8448</a>
+                <span>Bronx, NY</span>
+            </div>
+            <!-- ====== SOCIAL LINKS ====== -->
+            <div class="social">
+                <!-- Add your real links if available -->
+                <!--
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                -->
+            </div>
+        </aside>
+        <main class="main">
+            <!-- ====== SUMMARY ====== -->
+            <div class="section">
+                <h2>About</h2>
+                <p>
+                    Motivated high school student with a passion for technology, engineering, and education. Experienced in web development, tutoring, and leadership. Fluent in Spanish and English, with a proven record of leadership and academic achievement.
+                </p>
+            </div>
+            <!-- ====== EDUCATION ====== -->
+            <div class="section">
+                <h2>Education</h2>
+                <div class="education">
+                    <span class="degree">High School Diploma</span>
+                    <span class="period">Grad: 2026</span><br>
+                    <span class="school">Marble Hill School for International Studies, Bronx, NY</span>
+                    <div>
+                        <em>GPA: 90%. Special courses: AP Computer Science, AP Literature, AP Biology, AP Calculus</em>
+                    </div>
+                </div>
+                <div class="education">
+                    <span class="degree">Summer Engineering Program</span>
+                    <span class="period">June–July 2025</span><br>
+                    <span class="school">Manhattan College, New York, NY</span>
+                    <div>
+                        <em>
+                            Completed a 10-day intensive program focused on engineering, math, and science. Participated in hands-on experiments in chemical, civil, computer, electrical, environmental, and mechanical engineering. Explored topics such as robotics, computer-aided design, green building, and structural engineering. Attended guest lectures, field trips, and sessions on college admissions and scholarships.
+                        </em>
+                    </div>
+                </div>
+                <div class="education">
+                    <span class="degree">Precollege Studies (Upcoming)</span>
+                    <span class="period">July–August 2025</span><br>
+                    <span class="school">Cornell University (Precollege Studies)</span>
+                    <div>
+                        <em>
+                            Enrolled in a precollege engineering course to further develop technical and problem-solving skills.
+                        </em>
+                    </div>
+                </div>
+            </div>
+            <!-- ====== EXPERIENCE ====== -->
+            <div class="section">
+                <h2>Experience</h2>
+                <div class="experience">
+                    <span class="job-title">Founder & Manager</span>
+                    <span class="period">2025 - Present</span><br>
+                    <span class="company">The Quantum Code (Remote, Bronx NY)</span>
+                    <div>
+                        <ul>
+                            <li>Developing a website on the history of STEM.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience">
+                    <span class="job-title">Math Tutor</span>
+                    <span class="period">2023 - Present</span><br>
+                    <span class="company">Marble Hill High School, Bronx, NY</span>
+                    <div>
+                        <ul>
+                            <li>Provided academic support to 7-10 students every Saturday, focusing on test preparation and homework assistance.</li>
+                            <li>Helped students improve performance through targeted review sessions and personalized guidance.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience">
+                    <span class="job-title">Analyst Shadowing Experience</span>
+                    <span class="period">July 2024 - August 2024</span><br>
+                    <span class="company">New Visions/Lazard Internship for Financial Literacy, Bronx, NY</span>
+                    <div>
+                        <ul>
+                            <li>Observed and collaborated with a junior analyst in a team of 4+ to assess potential brand acquisitions for VF Corp.</li>
+                            <li>Presented a strategic case for why VF Corp should acquire Under Armour, evaluating company backgrounds, brand positioning, and market trends.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ====== EXTRACURRICULAR ACTIVITIES ====== -->
+            <div class="section">
+                <h2>Extracurricular Activities</h2>
+                <div class="experience">
+                    <span class="job-title">Member, Marble Hill’s Model UN Team</span>
+                    <span class="period">2023 - Present</span><br>
+                    <span class="company">Bronx, NY</span>
+                    <div>
+                        <ul>
+                            <li>Best Small Delegation Winner – Awarded at GCMUN, an international MUN conference, for outstanding diplomacy, research, and debate skills.</li>
+                            <li>Public Speaking & Negotiation – Developed strong argumentation, collaboration, and crisis resolution skills through structured debates.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience">
+                    <span class="job-title">Mentee</span>
+                    <span class="period">2024 - Present</span><br>
+                    <span class="company">iMentor, Bronx, NY</span>
+                    <div>
+                        <ul>
+                            <li>Maintain regular online communication through projects and monthly events with a professional advisor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ====== SKILLS ====== -->
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <span class="skill">Spanish (fluent)</span>
+                    <span class="skill">English (fluent)</span>
+                    <span class="skill">Italian (Limited Working Proficiency)</span>
+                    <span class="skill">Google Docs</span>
+                    <span class="skill">Microsoft Suite</span>
+                    <span class="skill">Email</span>
+                    <span class="skill">Writing Skills</span>
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                </div>
+            </div>
+            <!-- ====== AWARDS/ACHIEVEMENTS ====== -->
+            <div class="section">
+                <h2>Awards & Achievements</h2>
+                <ul>
+                    <li>Outstanding Math Award – 2024</li>
+                    <li>High School Honor Roll – 2022-Present</li>
+                    <li>Leadership Certification – National Outdoor Leadership School, 2024</li>
+                    <li>Risk Management Certificate – National Outdoor Leadership School, 2024</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
